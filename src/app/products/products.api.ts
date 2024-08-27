@@ -4,6 +4,7 @@ export const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export async function getProducts() {
     const data = await fetch(`${BACKEND_URL}/api/products`, {
     //const data = await fetch('http://localhost:4000/api/products', {
+    //subido
         cache: "no-store",
     });
     return await data.json();
